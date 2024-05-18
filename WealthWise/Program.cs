@@ -6,11 +6,16 @@ internal class Program
     {
         Console.WriteLine("Hi, Welcome to Wealth Wise where we help you to make a wise decision in being healthy");
 
-        int user = int.Parse(Console.ReadLine());
+        Console.WriteLine("\n");
+
+        Console.WriteLine("*******************************");
+        Console.WriteLine("\n");
 
         Console.WriteLine("Please choose whether you want to option 1: calculate your expenses " +
-            "\n" + "option 2: get advice on how to take care of your finances +" +
-            "\n" + "Check if you close on reaching your goal: ");
+            "\n" + "option 2: get advice on how to take care of your finances " +
+            "\n" + "option 3: Check if you close on reaching your goal: ");
+
+        int user = int.Parse(Console.ReadLine());
 
         for (int i = 0; i < 2; i++)
         {
