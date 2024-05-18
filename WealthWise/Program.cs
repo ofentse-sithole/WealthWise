@@ -11,7 +11,8 @@ internal class Program
         Console.WriteLine("*******************************");
         Console.WriteLine("\n");
 
-        Console.WriteLine("Please choose whether you want to option 1: calculate your expenses " +
+        Console.WriteLine("Please choose whether you want to"  + 
+            "\n"+ "option 1: calculate your expenses " +
             "\n" + "option 2: get advice on how to take care of your finances " +
             "\n" + "option 3: Check if you close on reaching your goal: ");
 
@@ -48,25 +49,36 @@ internal class Program
 
     public static void Expenses()
     {
-        int salary, rent, food, transport, utilities, other;
+        int salary, rent, food, transport, utilities, other, total;
+
+        int subtotal;
+        
 
         Console.WriteLine("Please enter your salary: ");
-        Console.ReadLine();
+        salary = int.Parse(Console.ReadLine());
 
         Console.WriteLine("Please enter your rent: ");
-        Console.ReadLine();
+        rent = int.Parse(Console.ReadLine());
 
         Console.WriteLine("Please enter your food expenses: ");
-        Console.ReadLine();
+        food = int.Parse(Console.ReadLine());
 
         Console.WriteLine("Please enter your transport expenses: ");
-        Console.ReadLine();
+        transport = int.Parse(Console.ReadLine());
 
         Console.WriteLine("Please enter your utilities expenses: ");
-        Console.ReadLine();
+        utilities = int.Parse(Console.ReadLine());
 
         Console.WriteLine("Please enter your other expenses: ");
-        Console.ReadLine();
+        other = int.Parse(Console.ReadLine());
+
+        subtotal = rent + food + transport + utilities + other;
+
+        total = salary - subtotal;
+
+        Console.WriteLine("The total amount spent on expenses is: " + subtotal);
+        Console.WriteLine("\n");
+        Console.WriteLine("The total amount left from the salary is : " + total);
 
     }
 

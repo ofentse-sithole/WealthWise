@@ -13,12 +13,13 @@ namespace WealthWise
 
         public static void GetAdvice()
         {
-            int option = int.Parse(Console.ReadLine());
-
+            
             Console.WriteLine("Please be adviced that we can help you finaincially. Please choose an option below: ");
             Console.WriteLine("1. Get advice on how to save money");
             Console.WriteLine("2. Get advice on how to invest money");
             Console.WriteLine("3. Get advice on how to spend money");
+
+            int option = int.Parse(Console.ReadLine());
 
             //how to save money
             if (option == 1)
